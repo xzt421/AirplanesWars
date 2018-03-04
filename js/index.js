@@ -36,10 +36,8 @@ function start() {
 		thatT = $("#me").offset().top;
 	})
 	$(document).on("touchmove", function(e) {
-		//var x = e.changedTouches[0].clientX - startX + thatL + $("#me").width() / 2,
-		//	y = e.changedTouches[0].clientY - startY + thatT;
-		var x = e.changedTouches[0].clientX - startX + thatL,
-			y = e.changedTouches[0].clientY - startY;
+		var x = e.changedTouches[0].clientX - startX + thatL + $("#me").width() / 2,
+			y = e.changedTouches[0].clientY - startY + thatT;
 		x = fn(x, $("#me").width() / 2, $(".box").width() - $("#me").width() / 2);
 		y = fn(y, 0, $(".box").height() - $("#me img").height());
 		$("#me").css({
