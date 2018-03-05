@@ -130,8 +130,8 @@ function init() {
 	$("#df").css("display", "block"); //显示分数
 	$("#current").html("0")
 	$("#me").css({
-		"top": "23rem",
-		"left": "7.5rem"
+		"top": "90%",
+		"left": "50%"
 	}); //初始化己方战机的位置
 	$.each($(".bullet"), function() {
 		$(this).remove();
