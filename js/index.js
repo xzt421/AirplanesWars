@@ -30,14 +30,14 @@ function start() {
 		thatL = 0,
 		thatR = 0;
 	$(document).on("touchstart", function(e) {
-		startX = e.changedTouches[0].clientX;
-		startY = e.changedTouches[0].clientY;
+		startX = e.changedTouches[0].pageX;
+		startY = e.changedTouches[0].pageY;
 		thatL = $("#me").offset().left;
 		thatT = $("#me").offset().top;
 	})
 	$(document).on("touchmove", function(e) {
-		var x = e.changedTouches[0].clientX - startX + thatL + $("#me").width() / 2,
-			y = e.changedTouches[0].clientY - startY + thatT;
+		var x = e.changedTouches[0].pageX - startX + thatL + $("#me").width() / 2,
+			y = e.changedTouches[0].pageY - startY + thatT;
 		x = fn(x, $("#me").width() / 2, $(".box").width() - $("#me").width() / 2);
 		y = fn(y, 0, $(".box").height() - $("#me img").height());
 		$("#me").css({
