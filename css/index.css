@@ -54,8 +54,8 @@ body,
     width: 2rem;
     height: 2rem;
     position: absolute;
-    top: 23rem;
-    left: 7.5rem;
+    top: 85%;
+    left: 50%;
     margin-left: -1rem;
     text-align: center;
     z-index: 5; }
@@ -94,9 +94,10 @@ body,
     height: 9rem;
     position: absolute;
     top: 50%;
-    left: 1.5rem;
+    left: 50%;
     z-index: 30;
     margin-top: -4.5rem;
+    margin-left: -6rem;
     background: url(../img/Common.png) -28.52rem -13.32rem no-repeat;
     background-size: 450%;
     color: white;
